@@ -22,10 +22,10 @@ public class Point3D extends Point2D {
     }
 
     public void displayPoint() {
-        System.out.println("[".concat(x.toString()).concat((", ")).concat((y.toString())).concat((", ")).concat((z.toString())).concat(("]")));
+        System.out.println("[".concat(getX().toString()).concat((", ")).concat((getY().toString())).concat((", ")).concat((getZ().toString())).concat(("]")));
     }
 
-    public void translate(Integer dX, Integer dY, Integer dZ) {
+    public void translate(Integer dZ) {
         setZ(z+dZ);
     }
 }
