@@ -11,5 +11,6 @@ public class Run {
         point1.translate(5, 5);
         point2.displayPoint();
         point2.translate(6, 6);
+        System.out.println(Point2D.cpt);
     }
 }

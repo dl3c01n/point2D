@@ -3,10 +3,21 @@ package com.company.formation.fr.dessin;
 public class Point2D {
     public Integer x;
     public Integer y;
+    public static Integer cpt = 0;
 
-    public Point2D(Integer x, Integer y) {
-        this.x = x;
-        this.y = y;
+    public static Integer getCpt() {
+        return Point2D.cpt += 1;
+    }
+
+    public Point2D(){
+        setX(0);
+        setY(0);
+        Point2D.getCpt();
+    }
+    public Point2D(Integer vX, Integer vY) {
+        setX(vX);
+        setY(vY);
+        Point2D.getCpt();
     }
 
     public Integer getX() {
