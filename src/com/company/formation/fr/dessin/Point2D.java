@@ -10,13 +10,13 @@ public class Point2D {
     }
 
     public Point2D(){
-        setX(0);
-        setY(0);
+        this.setX(0);
+        this.setY(0);
         Point2D.getCpt();
     }
     public Point2D(Integer vX, Integer vY) {
-        setX(vX);
-        setY(vY);
+        this.setX(vX);
+        this.setY(vY);
         Point2D.getCpt();
     }
 
