@@ -21,6 +21,8 @@ public class Point3D extends Point2D {
         return this.z;
     }
 
+
+    @Override
     public void displayPoint() {
         System.out.println("[".concat(getX().toString()).concat((", ")).concat((getY().toString())).concat((", ")).concat((getZ().toString())).concat(("]")));
     }
