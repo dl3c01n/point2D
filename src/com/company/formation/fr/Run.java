@@ -4,7 +4,7 @@ import com.company.formation.fr.dessin.Point3D;
 public class Run {
     public static void main(String[] args){
         Point3D point = new Point3D(8, 4, 4);
-        point.translate(10);
+        point.translate(10, 15, 20);
         point.displayPoint();
     }
 }
