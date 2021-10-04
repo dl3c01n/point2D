@@ -8,9 +8,8 @@ public class Point3D extends Point2D {
     }
 
     public Point3D(Integer z, Integer x, Integer y) {
+        super(x, y);
         setZ(z);
-        setX(x);
-        setY(y);
     }
 
     public void setZ(Integer z) {
@@ -26,8 +25,8 @@ public class Point3D extends Point2D {
     public void displayPoint() {
         System.out.println("[".concat(getX().toString()).concat((", ")).concat((getY().toString())).concat((", ")).concat((getZ().toString())).concat(("]")));
     }
-
-    public void translate(Integer dZ) {
-        setZ(z+dZ);
+    public void translate(Integer dX, Integer dY, Integer dZ) {
+        super.translate(dX, dY);
+        this.setZ(this.getZ()+dZ);
     }
 }
